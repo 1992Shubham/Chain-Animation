@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     func onClickView() {
         UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
             self.lbl1.isHidden = false
-            self.lbl1.transform = CGAffineTransform(translationX: 0, y: -120)
+            self.lbl1.transform = CGAffineTransform(translationX: 0, y: -130)
         }) { (_) in
             UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.5, options: .curveEaseInOut, animations: {
                 self.lbl2.isHidden = false
@@ -55,11 +55,11 @@ class ViewController: UIViewController {
             }, completion: { (_) in
                 UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.0, options: .curveEaseInOut, animations: {
                     self.lbl3.isHidden = false
-                    self.lbl3.transform = CGAffineTransform(translationX: 0, y: -60)
+                    self.lbl3.transform = CGAffineTransform(translationX: 0, y: -50)
                 }, completion: { (_) in
                     UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.0, options: .curveEaseInOut, animations: {
                         self.lbl4.isHidden = false
-                        self.lbl4.transform = CGAffineTransform(translationX: 0, y: -30)
+                        self.lbl4.transform = CGAffineTransform(translationX: 0, y: -10)
                     }, completion: nil)
                 })
             })
