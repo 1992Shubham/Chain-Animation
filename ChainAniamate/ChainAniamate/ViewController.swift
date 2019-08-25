@@ -8,6 +8,7 @@
 
 import UIKit
 
+// This is the view controller in which chain animation is working.
 class ViewController: UIViewController {
     
     @IBOutlet weak var lbl1: UILabel!
